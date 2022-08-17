@@ -21,17 +21,18 @@ public class DemoTest
 	  WebDriver driver=new ChromeDriver();
 	  		  
 	
-  FileInputStream fis=new FileInputStream("./data/common.properties"); 
-	Properties  p=new Properties();
-	 p.load(fis);
-	 System.out.println("LOGIN TO Application");
-	 String Url=p.getProperty("url");
+ // FileInputStream fis=new FileInputStream("./data/common.properties"); 
+//	Properties  p=new Properties();
+	// p.load(fis);
+	// System.out.println("LOGIN TO Application");
+	 //String Url=p.getProperty("url");
 	 //String username=p.getProperty("un");
 	 //String password=p.getProperty("pwd");
 	 
-	 driver.get(Url);
-		
-	System.out.println(Url);
+	// driver.get(Url);
+	String URL = System.getProperty("url");
+	System.out.println(URL);
+	driver.get(URL);
 	System.out.println("welcome to jenkins");
 	System.out.println("Good Evening");
 	System.out.println("Welcome");
