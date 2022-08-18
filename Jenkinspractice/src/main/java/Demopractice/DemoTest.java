@@ -39,6 +39,10 @@ public class DemoTest
 		
 			System.out.println("Testing pull");
 					System.out.println("commit");
+		
+							System.out.println("commit");
+
+		
 
 		
 		
